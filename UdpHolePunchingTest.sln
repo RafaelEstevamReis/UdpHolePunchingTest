@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UHP.Test", "UHP.Test\UHP.Test.csproj", "{8B2DAAD7-43C9-42CB-A046-C708BA66D71B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UHP.Test", "UHP.Test\UHP.Test.csproj", "{8B2DAAD7-43C9-42CB-A046-C708BA66D71B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UHP.Lib", "UHP.Lib\UHP.Lib.csproj", "{5221E539-C046-4162-8AD0-65D8C4043C71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UHP.Lib", "UHP.Lib\UHP.Lib.csproj", "{5221E539-C046-4162-8AD0-65D8C4043C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UHP.API", "UHP.API\UHP.API.csproj", "{6BB59212-C7C5-4459-BF15-4937D90EDA18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5221E539-C046-4162-8AD0-65D8C4043C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5221E539-C046-4162-8AD0-65D8C4043C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5221E539-C046-4162-8AD0-65D8C4043C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB59212-C7C5-4459-BF15-4937D90EDA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB59212-C7C5-4459-BF15-4937D90EDA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB59212-C7C5-4459-BF15-4937D90EDA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB59212-C7C5-4459-BF15-4937D90EDA18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,7 +15,6 @@ namespace UHP.Lib
             Marshal.FreeHGlobal(buffer);
             return obj;
         }
-
         public static byte[] RawSerialize<T>(T value) where T : struct
         {
             int rawSize = Marshal.SizeOf(value);
@@ -37,6 +36,5 @@ namespace UHP.Lib
             var data = protocol.Receive();
             return RawDeserialize<T>(data.Buffer);
         }
-
     }
 }

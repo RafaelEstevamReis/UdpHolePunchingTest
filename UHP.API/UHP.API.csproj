@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>d075fb29-322d-42d1-9af8-083908fa38d0</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UHP.Lib\UHP.Lib.csproj" />
+  </ItemGroup>
+
+
+</Project>
