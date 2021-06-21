@@ -11,17 +11,20 @@ namespace UHP.Test
         {
             Console.WriteLine("Hello World!");
 
+
+            UPnP.Discover();
+
             // Server
             //var udp1 = SocketHelper.BuildUdpClientBind(20_000);
             //Protocol comm1 = new Protocol(udp1, new byte[] { 82, 82, 82 });
 
             //// client
-            var udp2 = SocketHelper.BuildUdpClient();
-            udp2.Connect("127.0.0.1", 444); //"www.test-api.kinghost.net", 444);
-            udp2.Send(new byte[] { 1, 2, 3, 4 }, 4);
-            var dataBack = udp2.ReceiveAsync().Result;
+            //var udp2 = SocketHelper.BuildUdpClient();
+            //udp2.Connect("127.0.0.1", 444); //"www.test-api.kinghost.net", 444);
+            //udp2.Send(new byte[] { 1, 2, 3, 4 }, 4);
+            //var dataBack = udp2.ReceiveAsync().Result;
 
-            dataBack = dataBack;
+            //dataBack = dataBack;
 
             //Protocol comm2 = new Protocol(udp2, new byte[] { 82, 82, 82 });
 
