@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Net.Sockets;
+using System.Threading;
 using UHP.Lib;
 
 namespace UHP.Test
@@ -11,8 +12,33 @@ namespace UHP.Test
         {
             Console.WriteLine("Hello World!");
 
+            //TcpListener listener = new TcpListener(15000);
+            //listener.Start();
 
-            UPnP.Discover();
+            //List<>
+
+            //while (true)
+            //{
+            //    Thread.Sleep(250);
+            //    if (!listener.Pending()) continue;
+            //}
+
+            var udp1 = SocketHelper.BuildUdpClientBind(20_000);
+            while (true)
+            {
+                Thread.Sleep(100);
+                if (udp1.Available == 0) continue;
+                Thread.Sleep(100);
+
+                IPEndPoint endPoint = null;
+                var data = udp1.Receive(ref endPoint);
+
+                udp1.Send(data, data.Length, endPoint);
+            }
+
+
+
+            //UPnP.Discover();
 
             // Server
             //var udp1 = SocketHelper.BuildUdpClientBind(20_000);
