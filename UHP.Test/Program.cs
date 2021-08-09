@@ -23,7 +23,11 @@ namespace UHP.Test
             //    if (!listener.Pending()) continue;
             //}
 
-            var udp1 = SocketHelper.BuildUdpClientBind(20_000);
+            var udp1 = new UdpClient(AddressFamily.InterNetworkV6);
+            udp1.Client.DualMode = true;
+            udp1.Client.SetSocketOption(SocketOptionLevel.IPv6, SocketOptionName.IPv6Only, 0);
+
+            udp1.Client.Bind(new IPEndPoint(IPAddress.IPv6Any, 20_000));
             while (true)
             {
                 Thread.Sleep(100);

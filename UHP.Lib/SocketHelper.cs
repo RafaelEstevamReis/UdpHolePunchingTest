@@ -50,7 +50,7 @@ namespace UHP.Lib
         public static UdpClient BuildUdpClientBind(int port)
         {
             var udp = BuildUdpClient();
-            udp.Client.Bind(new IPEndPoint(IPAddress.Any, port));
+            udp.Client.Bind(new IPEndPoint(IPAddress.IPv6Any, port));
             return udp;
         }
 
